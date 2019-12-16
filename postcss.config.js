@@ -11,7 +11,6 @@ const pluginsProduction = {
     whitelistPatterns: [/projects?--?\d+$/],
     defaultExtractor: content => content.match(/[\w-/:.]+(?<!:)/g) || [],
   },
-  cssnano: { preset: 'default' },
 }
 
 module.exports = {

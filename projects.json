@@ -1,0 +1,22 @@
+[
+  {
+    "name": "DMP Portfolio",
+    "url": "https://dmp-bremerhaven.de",
+    "image": { "src": "./assets/projects/dmp.jpg", "alt": "" }
+  },
+  {
+    "name": "Coworking Wolle",
+    "url": "https://coworking-wolle.de",
+    "image": { "src": "./assets/projects/coworking.jpg", "alt": "" }
+  },
+  {
+    "name": "Blumen Wieting",
+    "url": "https://blumen-wieting.de",
+    "image": { "src": "./assets/projects/wieting.jpg", "alt": "" }
+  },
+  {
+    "name": "Theater Förderverein",
+    "url": "https://theater-foerderverein-bremerhaven.de",
+    "image": { "src": "./assets/projects/theater.jpg", "alt": "" }
+  }
+]

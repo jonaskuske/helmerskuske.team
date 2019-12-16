@@ -1,4 +1,4 @@
-<html lang="de" class="h-full antialiased bg-primary smoothscroll">
+<html lang="de" class="h-full antialiased bg-primary scroll-smooth">
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png" />
-    <link rel="manifest" href="./assets/icons/site.webmanifest" />
+    <link rel="manifest" href="./site.webmanifest" />
     <link rel="mask-icon" href="./assets/icons/safari-pinned-tab.svg" color="#2a7b76" />
 
     <meta name="theme-color" content="#2a7b76" />
@@ -34,26 +34,37 @@
       property="og:description"
       content="Wir bieten Ihnen das Komplettpaket für Ihre neue Website! Modernes, frisches Design geht bei uns mit fortschrittlicher Entwicklungstechnik Hand in Hand. Wir freuen uns auf Sie!"
     />
-    <!-- <meta property="og:image" content="https://helmerskuske.team/assets/images/snippet.png" /> -->
-    <!-- <meta property="og:image:width" content="1900" /> -->
-    <!-- <meta property="og:image:height" content="1089" /> -->
+    <!-- TODO: add OpenGraph image
+    <meta property="og:image" content="https://helmerskuske.team/assets/images/snippet.png" />
+    <meta property="og:image:width" content="1900" />
+    <meta property="og:image:height" content="1089" />
+    -->
 
-    <link rel="stylesheet" href="./assets/__styles.css" />
+    <link rel="stylesheet" href="./assets/styles.css" />
     <script>
-      // prettier-ignore
-      !function(d,s,u){if('scrollBehavior' in d.documentElement.style)return;function i(s){var e=d.createElement('script');e.src=s;d.head.appendChild(e)};i(u+s+'-polyfill/dist/'+s+'.min.js');i(u+s+'-anchor-polyfill')}(document,'smoothscroll','//unpkg.com/')
+      ;(function loadSmoothscrollPolyfills(doc, smoothscroll, cdn) {
+        if ('scrollBehavior' in doc.documentElement.style) return
+
+        function insertScript(source) {
+          const scriptEl = doc.createElement('script')
+          scriptEl.src = source
+          doc.head.appendChild(scriptEl)
+        }
+
+        insertScript(cdn + smoothscroll + '-polyfill/dist/' + smoothscroll + '.min.js')
+        insertScript(cdn + smoothscroll + '-anchor-polyfill')
+      })(document, 'smoothscroll', '//unpkg.com/')
     </script>
   </head>
 
   <body class="flex flex-col min-h-full text-white font-body">
-    <header class="container mx-auto mb-4 py-4">
-      <a href="./" class="relative hover:underline focus:underline outline-none">
+    <header class="container mb-4 py-4">
+      <a href="./" class="relative hocus:underline outline-none">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="#fff"
           viewBox="0 0 100 100"
-          class="inline w-4 absolute left-0"
-          style="transform: translate(-120%, 3px);"
+          class="inline w-3 absolute left-0 align-arrow"
         >
           <path
             d="M69 3l7 2c4 4 4 11 0 15L46 50l30 30c4 4 4 11 0 15s-10 4-14 0L24 57c-2-2-3-4-3-7s1-5 3-7L62 5l7-2z"
@@ -63,9 +74,9 @@
       </a>
     </header>
 
-    <main class="container mx-auto mb-20">
+    <main class="container mb-20">
       <div class="max-w-3xl">
-        <h1 class="text-2xl mb-4">Impressum</h1>
+        <h1 class="text-2xl font-display font-medium mb-4">Impressum</h1>
 
         <h2 class="text-xl mb-2">Angaben gemäß §5 TMG</h2>
         <p class="mb-4">
@@ -131,22 +142,16 @@
       </div>
     </main>
 
-    <footer class="container mx-auto py-4 mt-auto">
+    <footer class="container py-4 mt-auto">
       <p class="text-center mb-4">
-        <a
-          href="#"
-          class="opacity-50 hover:opacity-100 focus:opacity-100 hover:underline focus:underline outline-none"
-          >Zurück nach oben</a
-        >
+        <a href="#" class="opacity-50 hocus:opacity-100 hocus:underline outline-none">
+          Zurück nach oben
+        </a>
       </p>
       <p class="text-center opacity-50 hover:opacity-100 focus-within:opacity-100">
-        <a href="./impressum" class="hover:underline focus:underline outline-none">
-          Impressum
-        </a>
+        <a href="./impressum.html" class="hocus:underline outline-none">Impressum</a>
         •
-        <a href="./datenschutz" class="hover:underline focus:underline outline-none">
-          Datenschutz
-        </a>
+        <a href="./datenschutz.html" class="hocus:underline outline-none">Datenschutz</a>
       </p>
     </footer>
   </body>

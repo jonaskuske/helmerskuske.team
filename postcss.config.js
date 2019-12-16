@@ -1,15 +1,19 @@
-const purgecss = require('@fullhuman/postcss-purgecss')({
-  content: ['./**/*.html'],
-  whitelist: [],
-  defaultExtractor: content => content.match(/[\w-/:.]+(?<!:)/g) || [],
-})
+const plugins = {
+  'postcss-import': {},
+  tailwindcss: {},
+  'postcss-smoothscroll-anchor-polyfill': {},
+  autoprefixer: {},
+}
 
-const cssnano = require('cssnano')({ preset: 'default' })
+const pluginsProduction = {
+  '@fullhuman/postcss-purgecss': {
+    content: ['./**/*.html'],
+    whitelistPatterns: [/projects?--?\d+$/],
+    defaultExtractor: content => content.match(/[\w-/:.]+(?<!:)/g) || [],
+  },
+  cssnano: { preset: 'default' },
+}
 
 module.exports = {
-  plugins: [
-    require('tailwindcss'),
-    require('autoprefixer'),
-    ...(process.env.NODE_ENV === 'production' ? [purgecss, cssnano] : []),
-  ],
+  plugins: { ...plugins, ...(process.env.NODE_ENV === 'production' && pluginsProduction) },
 }

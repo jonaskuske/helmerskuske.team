@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de" class="h-full antialiased bg-primary scroll-smooth">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>404 | Helmers & Kuske</title>
+    <meta name="robots" content="noindex" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="mask-icon" href="./assets/icons/safari-pinned-tab.svg" color="#2a7b76" />
+
+    <meta name="theme-color" content="#2a7b76" />
+    <meta name="msapplication-TileColor" content="#2a7b76" />
+    <meta name="msapplication-config" content="./assets/icons/browserconfig.xml" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- [if IE]
+      <link rel="shortcut icon" href="./assets/icons/favicon.ico">
+    <![endif]-->
+
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script>
+      ;(function loadSmoothscrollPolyfills(doc, smoothscroll, cdn) {
+        if ('scrollBehavior' in doc.documentElement.style) return
+
+        function insertScript(source) {
+          const scriptEl = doc.createElement('script')
+          scriptEl.src = source
+          doc.head.appendChild(scriptEl)
+        }
+
+        insertScript(cdn + smoothscroll + '-polyfill/dist/' + smoothscroll + '.min.js')
+        insertScript(cdn + smoothscroll + '-anchor-polyfill')
+      })(document, 'smoothscroll', '//unpkg.com/')
+    </script>
+  </head>
+  <body class="flex flex-col min-h-full text-white font-body">
+    <main class="container my-auto flex flex-col items-center">
+      <h1 class="text-2xl font-display font-medium mb-2">404</h1>
+      <p class="mb-6 text-center">Die von Ihnen aufgerufene Seite existiert nicht.</p>
+      <a
+        href="./"
+        class="px-4 py-2 border-2 border-white rounded-lg bg-white text-primary hocus:bg-primary hocus:text-white focus:shadow-outline outline-none"
+      >
+        Zurück zur Startseite
+      </a>
+    </main>
+
+    <footer class="container py-4">
+      <p class="text-center opacity-50 hover:opacity-100 focus-within:opacity-100">
+        <a href="./impressum.html" class="hocus:underline outline-none">Impressum</a>
+        •
+        <a href="./datenschutz.html" class="hocus:underline outline-none">Datenschutz</a>
+      </p>
+    </footer>
+  </body>
+</html>

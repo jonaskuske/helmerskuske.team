@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rubik'), local('Rubik-Regular'), url(./fonts/Rubik_400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F,
+    U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Rubik Medium'), local('Rubik-Medium'), url(./fonts/Rubik_500.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F,
+    U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@tailwind base;
+
+*,
+::before,
+::after {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img {
+  @apply object-cover;
+}
+
+@tailwind components;
+
+.tap-target::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.project--hidden {
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: opacity 250ms ease-out, max-height 350ms 160ms ease-in, visibility 1ms 600ms;
+  opacity: 0;
+}
+.project--visible {
+  opacity: 1;
+  max-height: 600px;
+  visibility: visible;
+  transition: visibility 1ms, max-height 350ms ease-out, opacity 150ms 360ms ease-in;
+}
+
+.project {
+  @apply project--hidden;
+}
+
+.project--0,
+.project--1,
+.project--2,
+#project-toggle:checked + * .project {
+  @apply project--visible;
+}
+
+@screen md {
+  .project--3 {
+    @apply project--visible;
+  }
+}
+
+@screen lg {
+  .project--3 {
+    @apply project--hidden;
+  }
+}
+
+label[for='project-toggle']:hover,
+#project-toggle:focus ~ * label[for='project-toggle'] {
+  @apply bg-primary;
+  @apply text-white;
+}
+#project-toggle:focus ~ * label[for='project-toggle'] {
+  @apply shadow-outline;
+}
+
+.project-toggle-btn--less,
+#project-toggle:checked ~ * .project-toggle-btn--all {
+  display: none;
+}
+#project-toggle:checked ~ * .project-toggle-btn--less {
+  display: inline;
+}
+
+.projects-0 #project-toggle,
+.projects-0 label[for='project-toggle'],
+.projects-1 #project-toggle,
+.projects-1 label[for='project-toggle'],
+.projects-2 #project-toggle,
+.projects-2 label[for='project-toggle'],
+.projects-3 #project-toggle,
+.projects-3 label[for='project-toggle'] {
+  @apply hidden;
+}
+
+@screen md {
+  .projects-4 #project-toggle,
+  .projects-4 label[for='project-toggle'] {
+    @apply hidden;
+  }
+}
+
+@screen lg {
+  .projects-4 #project-toggle,
+  .projects-4 label[for='project-toggle'] {
+    @apply block;
+  }
+}
+
+@tailwind utilities;
+
+.align-arrow {
+  transform: translate(-120%, 50%);
+}

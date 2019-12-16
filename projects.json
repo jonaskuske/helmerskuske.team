@@ -2,21 +2,21 @@
   {
     "name": "DMP Portfolio",
     "url": "https://dmp-bremerhaven.de",
-    "image": { "src": "./assets/projects/dmp.jpg", "alt": "" }
+    "image": { "src": "./assets/projects/dmp.jpg", "webp": "", "alt": "" }
   },
   {
     "name": "Coworking Wolle",
     "url": "https://coworking-wolle.de",
-    "image": { "src": "./assets/projects/coworking.jpg", "alt": "" }
+    "image": { "src": "./assets/projects/coworking.jpg", "webp": "", "alt": "" }
   },
   {
     "name": "Blumen Wieting",
     "url": "https://blumen-wieting.de",
-    "image": { "src": "./assets/projects/wieting.jpg", "alt": "" }
+    "image": { "src": "./assets/projects/wieting.jpg", "webp": "", "alt": "" }
   },
   {
     "name": "Theater Förderverein",
     "url": "https://theater-foerderverein-bremerhaven.de",
-    "image": { "src": "./assets/projects/theater.jpg", "alt": "" }
+    "image": { "src": "./assets/projects/theater.jpg", "webp": "", "alt": "" }
   }
 ]

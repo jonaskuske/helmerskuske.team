@@ -18,5 +18,15 @@
     "name": "Theater Förderverein",
     "url": "https://theater-foerderverein-bremerhaven.de",
     "image": { "src": "./assets/projects/theater.jpg", "webp": "", "alt": "" }
+  },
+  {
+    "name": "Unterm Sternenhimmel",
+    "url": "https://unterm-sternenhimmel.de/",
+    "image": { "src": "./assets/projects/sternenhimmel.jpg", "webp": "", "alt": "" }
+  },
+  {
+    "name": "sleak magazine",
+    "url": "https://dmp-magazin.de",
+    "image": { "src": "./assets/projects/sleak.jpg", "webp": "", "alt": "" }
   }
 ]

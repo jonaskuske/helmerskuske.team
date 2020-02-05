@@ -46,7 +46,7 @@ module.exports = {
     textDecoration: ['responsive', 'hover', 'focus', 'hocus'],
   },
   plugins: [
-    require('tailwindcss-interaction-variants')(),
+    require('tailwindcss-interaction-variants'),
     require('tailwindcss-pseudo-elements'),
     require('tailwindcss-aspect-ratio')(),
     tailwindContent,

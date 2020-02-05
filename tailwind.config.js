@@ -6,12 +6,9 @@ function tailwindContent({ addUtilities, variants }) {
 
 function tailwindScrollBehavior({ addUtilities, variants }) {
   const values = ['auto', 'smooth']
-  const classNameMap = values.reduce((map, value) => {
-    const className = `.scroll-${value}`
-    map[className] = { scrollBehavior: value }
-
-    return map
-  }, {})
+  const classNameMap = Object.fromEntries(
+    values.map(scrollBehavior => [`.scroll-${scrollBehavior}`, { scrollBehavior }])
+  )
 
   addUtilities(classNameMap, variants('scrollBehavior'))
 }

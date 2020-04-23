@@ -61,11 +61,11 @@
   <body class="flex flex-col min-h-full text-white font-body">
     <main class="container">
       <section class="mb-16">
-        <p class="text-center mt-12 mb-8">
+        <p class="mt-12 mb-8 text-center">
           Rieke Helmers & Jonas Kuske
         </p>
 
-        <h1 class="text-center text-4xl mb-12 font-medium leading-snug">
+        <h1 class="mb-12 text-4xl font-medium leading-snug text-center">
           Web
           <br />
           Design
@@ -73,7 +73,7 @@
           Development
         </h1>
 
-        <p class="text-center mb-10 max-w-3xl mx-auto">
+        <p class="max-w-3xl mx-auto mb-10 text-center">
           Von Konzeption, Struktur und Design bis hin zur Umsetzung – wir bieten Ihnen das
           Komplettpaket für Ihre neue Website. Auch für Branding, also das Erstellen von Logos und
           Corporate Design, sind wir das richtige Team. Wir sind jung, dynamisch und freuen uns auf
@@ -84,33 +84,33 @@
           <a
             tabindex="1"
             href="#kontakt"
-            class="inline-block bg-white rounded-lg outline-none text-primary px-4 py-2 border-2 border-transparent font-medium hocus:bg-primary hocus:text-white hocus:border-white focus:shadow-outline"
+            class="inline-block px-4 py-2 font-medium bg-white border-2 border-transparent rounded-lg outline-none text-primary hocus:bg-primary hocus:text-white hocus:border-white focus:shadow-outline"
           >
             Jetzt Kontakt aufnehmen
           </a>
         </div>
       </section>
 
-      <hr class="border-2 border-white rounded mb-6" />
+      <hr class="mb-6 border-2 border-white rounded" />
 
-      <section class="mb-16 relative">
-        <h2 id="projekte" class="text-2xl mb-6">Projekte</h2>
+      <section class="relative mb-16">
+        <h2 id="projekte" class="mb-6 text-2xl">Projekte</h2>
 
         <input
           type="checkbox"
           name="project-toggle"
           id="project-toggle"
-          class="sr-only bottom-0"
+          class="bottom-0 sr-only"
           tabindex="2"
         />
 
-        <ul class="flex flex-col flex-wrap md:flex-row -m-4 mb-6">
+        <ul class="flex flex-col flex-wrap mb-6 -m-4 md:flex-row">
           <each loop="project, index in projects">
             <li class="w-full md:w-1/2 lg:w-1/3 p-4 project project--{{ index }}">
               <figure
                 class="relative border-2 border-transparent rounded-lg hover:border-white focus-within:border-white"
               >
-                <picture class="block relative aspect-ratio-custom">
+                <picture class="relative block aspect-ratio-custom">
                   <if condition="project.image.webp">
                     <source src="{{ project.image.webp }}" type="image/webp" />
                   </if>
@@ -122,10 +122,10 @@
                   />
                 </picture>
 
-                <figcaption class="text-center mb-4">
+                <figcaption class="mb-4 text-center">
                   <a
                     href="{{ project.url }}"
-                    class="group tap-target outline-none"
+                    class="outline-none group tap-target"
                     target="_blank"
                     tabindex="1"
                   >
@@ -158,7 +158,7 @@
         <footer class="flex justify-center">
           <label
             for="project-toggle"
-            class="cursor-pointer px-4 py-2 border-2 border-white bg-white text-primary rounded-lg outline-none select-none"
+            class="px-4 py-2 bg-white border-2 border-white rounded-lg outline-none cursor-pointer select-none text-primary"
             aria-label="Alle Projekte einblenden"
           >
             <span class="project-toggle-btn--all">Alle anzeigen</span>
@@ -167,21 +167,21 @@
         </footer>
       </section>
 
-      <hr class="border-2 border-white rounded mb-6" />
+      <hr class="mb-6 border-2 border-white rounded" />
 
       <section class="mb-16">
-        <h2 id="team" class="text-2xl mb-16">Team</h2>
+        <h2 id="team" class="mb-16 text-2xl">Team</h2>
 
-        <div class="flex flex-col md:flex-row mx-auto max-w-3xl">
+        <div class="flex flex-col max-w-3xl mx-auto md:flex-row">
           <div class="flex-1 md:mr-12">
-            <picture class="block relative aspect-ratio-3/2 rounded-lg overflow-hidden shadow mb-4">
+            <picture class="relative block mb-4 overflow-hidden rounded-lg shadow aspect-ratio-3/2">
               <img src="./assets/rieke.jpg" alt="" class="absolute w-full h-full" />
             </picture>
             <h3 class="text-xl text-center">Rieke Helmers</h3>
             <p class="mb-4 text-center">
               <a
                 href="https://riekehelmers.com"
-                class="underline md:no-underline hocus:underline outline-none"
+                class="underline outline-none md:no-underline hocus:underline"
                 target="_blank"
               >
                 riekehelmers.com
@@ -195,20 +195,20 @@
             </p>
           </div>
           <div class="flex-1 md:ml-12">
-            <picture class="block relative aspect-ratio-3/2 rounded-lg overflow-hidden shadow mb-4">
+            <picture class="relative block mb-4 overflow-hidden rounded-lg shadow aspect-ratio-3/2">
               <img src="./assets/jonas.jpg" alt="" class="absolute w-full h-full" />
             </picture>
             <h3 class="text-xl text-center">Jonas Kuske</h3>
-            <p class="text-center mb-4">
+            <p class="mb-4 text-center">
               <a
                 href="https://jonaskuske.com?lang=de"
-                class="underline md:no-underline hocus:underline outline-none"
+                class="underline outline-none md:no-underline hocus:underline"
                 target="_blank"
               >
                 jonaskuske.com
               </a>
             </p>
-            <p class="">
+            <p>
               Jonas, auch 22 Jahre alt, hat sich neben seinem Studium in der Digitalen
               Medienproduktion zum sogenannten Full Stack Developer weitergebildet. Er beherrscht
               alle modernen Web-Techniken und das Designen digitaler Anwendungen.
@@ -217,17 +217,17 @@
         </div>
       </section>
 
-      <hr class="border-2 border-white rounded mb-6" />
+      <hr class="mb-6 border-2 border-white rounded" />
 
       <section class="mb-16">
         <h2 id="kontakt" class="text-2xl">
           Wir freuen uns über Ihre Nachricht:
         </h2>
 
-        <p class="text-center text-lg my-10">
+        <p class="my-10 text-lg text-center">
           <a
             href="mailto:mail@helmerskuske.team"
-            class="underline md:no-underline hocus:underline outline-none"
+            class="underline outline-none md:no-underline hocus:underline"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -245,7 +245,7 @@
         </p>
 
         <!-- TODO: add endpoint for contact form, then remove .hidden classes -->
-        <p class="mb-2 hidden">oder nutzen Sie das Kontaktformular:</p>
+        <p class="hidden mb-2">oder nutzen Sie das Kontaktformular:</p>
         <form action="https://api.test" method="POST" class="flex flex-col hidden">
           <div class="mb-2">
             <label for="name" class="block">Name</label>
@@ -254,7 +254,7 @@
               autocomplete="name"
               id="name"
               name="name"
-              class="block border-2 p-1 border-white text-white bg-transparent w-full outline-none focus:bg-white focus:text-primary"
+              class="block w-full p-1 text-white bg-transparent border-2 border-white outline-none focus:bg-white focus:text-primary"
             />
           </div>
 
@@ -266,7 +266,7 @@
               required
               id="mail"
               name="email"
-              class="block border-2 p-1 border-white text-white bg-transparent w-full outline-none focus:bg-white focus:text-primary"
+              class="block w-full p-1 text-white bg-transparent border-2 border-white outline-none focus:bg-white focus:text-primary"
             />
           </div>
 
@@ -276,7 +276,7 @@
               name="message"
               id="message"
               rows="10"
-              class="block border-2 p-1 border-white text-white bg-transparent w-full outline-none focus:bg-white focus:text-primary"
+              class="block w-full p-1 text-white bg-transparent border-2 border-white outline-none focus:bg-white focus:text-primary"
               required
             >
             </textarea>
@@ -284,7 +284,7 @@
 
           <button
             type="submit"
-            class="inline-block self-center bg-white rounded-lg outline-none text-primary px-4 py-2 border-2 border-transparent hocus:bg-primary hocus:text-white hocus:border-white outline-none focus:outline-none focus:shadow-outline"
+            class="self-center inline-block px-4 py-2 bg-white border-2 border-transparent rounded-lg outline-none text-primary hocus:bg-primary hocus:text-white hocus:border-white focus:outline-none focus:shadow-outline"
           >
             Nachricht senden
           </button>
@@ -292,16 +292,16 @@
       </section>
     </main>
 
-    <footer class="container mx-auto py-4 mt-auto">
-      <p class="text-center mb-4">
-        <a href="#" class="opacity-50 hocus:opacity-100 hocus:underline outline-none">
+    <footer class="container py-4 mx-auto mt-auto">
+      <p class="mb-4 text-center">
+        <a href="#" class="outline-none opacity-50 hocus:opacity-100 hocus:underline">
           Zurück nach oben
         </a>
       </p>
       <p class="text-center opacity-50 hover:opacity-100 focus-within:opacity-100">
-        <a href="./impressum.html" class="hocus:underline outline-none">Impressum</a>
+        <a href="./impressum.html" class="outline-none hocus:underline">Impressum</a>
         •
-        <a href="./datenschutz.html" class="hocus:underline outline-none">Datenschutz</a>
+        <a href="./datenschutz.html" class="outline-none hocus:underline">Datenschutz</a>
       </p>
     </footer>
   </body>

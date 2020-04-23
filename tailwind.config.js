@@ -1,3 +1,5 @@
+const { theme: defaultTheme } = require('tailwindcss/defaultConfig')
+
 function tailwindContent({ addUtilities, variants }) {
   const classNameMap = { '.content-empty': { content: '""' } }
 
@@ -28,8 +30,8 @@ module.exports = {
       colors: { primary: '#2a7b76' },
       flexGrow: { full: '9999' },
       fontFamily: {
-        display: ['Rubik', 'sans-serif'],
-        body: ['Rubik', 'sans-serif'],
+        display: ['Rubik', ...defaultTheme.fontFamily.sans],
+        body: ['Rubik', ...defaultTheme.fontFamily.sans],
       },
       zIndex: { '-1': '-1' },
       inset: { '1/2': '50%' },

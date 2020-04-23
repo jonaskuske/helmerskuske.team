@@ -7,7 +7,7 @@ function tailwindContent({ addUtilities, variants }) {
 function tailwindScrollBehavior({ addUtilities, variants }) {
   const values = ['auto', 'smooth']
   const classNameMap = Object.fromEntries(
-    values.map(scrollBehavior => [`.scroll-${scrollBehavior}`, { scrollBehavior }])
+    values.map((scrollBehavior) => [`.scroll-${scrollBehavior}`, { scrollBehavior }])
   )
 
   addUtilities(classNameMap, variants('scrollBehavior'))
@@ -48,7 +48,7 @@ module.exports = {
   plugins: [
     require('tailwindcss-interaction-variants'),
     require('tailwindcss-pseudo-elements'),
-    require('tailwindcss-aspect-ratio')(),
+    require('tailwindcss-aspect-ratio'),
     tailwindContent,
     tailwindScrollBehavior,
   ],

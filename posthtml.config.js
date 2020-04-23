@@ -7,7 +7,7 @@ const plugins = {
 const pluginsProduction = {
   'posthtml-shorten': {
     shortener: {
-      process: async href => (href.includes('//') ? href : href.replace('.html', '')),
+      process: async (href) => (href.includes('//') ? href : href.replace('.html', '')),
     },
   },
 }

@@ -2,31 +2,51 @@
   {
     "name": "DMP Portfolio",
     "url": "https://dmp-bremerhaven.de",
-    "image": { "src": "./assets/projects/dmp.jpg", "webp": "", "alt": "" }
+    "image": { "alt": "", "src": "./assets/projects/dmp.jpg", "webp": "./assets/projects/dmp.webp" }
   },
   {
     "name": "Coworking Wolle",
     "url": "https://coworking-wolle.de",
-    "image": { "src": "./assets/projects/coworking.jpg", "webp": "", "alt": "" }
+    "image": {
+      "alt": "",
+      "src": "./assets/projects/coworking.jpg",
+      "webp": "./assets/projects/coworking.webp"
+    }
   },
   {
     "name": "Blumen Wieting",
     "url": "https://blumen-wieting.de",
-    "image": { "src": "./assets/projects/wieting.jpg", "webp": "", "alt": "" }
+    "image": {
+      "alt": "",
+      "src": "./assets/projects/wieting.jpg",
+      "webp": "./assets/projects/wieting.webp"
+    }
   },
   {
     "name": "Theater Förderverein",
     "url": "https://theater-foerderverein-bremerhaven.de",
-    "image": { "src": "./assets/projects/theater.jpg", "webp": "", "alt": "" }
+    "image": {
+      "alt": "",
+      "src": "./assets/projects/theater.jpg",
+      "webp": "./assets/projects/theater.webp"
+    }
   },
   {
     "name": "Unterm Sternenhimmel",
     "url": "https://unterm-sternenhimmel.de/",
-    "image": { "src": "./assets/projects/sternenhimmel.jpg", "webp": "", "alt": "" }
+    "image": {
+      "alt": "",
+      "src": "./assets/projects/sternenhimmel.jpg",
+      "webp": "./assets/projects/sternenhimmel.webp"
+    }
   },
   {
     "name": "sleak magazine",
     "url": "https://dmp-magazin.de",
-    "image": { "src": "./assets/projects/sleak.jpg", "webp": "", "alt": "" }
+    "image": {
+      "alt": "",
+      "src": "./assets/projects/sleak.jpg",
+      "webp": "./assets/projects/sleak.webp"
+    }
   }
 ]

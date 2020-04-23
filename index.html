@@ -123,7 +123,7 @@
               >
                 <picture class="relative block aspect-ratio-custom">
                   <if condition="project.image.webp">
-                    <source src="{{ project.image.webp }}" type="image/webp" />
+                    <source srcset="{{ project.image.webp }}" type="image/webp" />
                   </if>
 
                   <img
@@ -186,6 +186,7 @@
         <div class="flex flex-col max-w-3xl mx-auto md:flex-row">
           <div class="flex-1 md:mr-12">
             <picture class="relative block mb-4 overflow-hidden rounded-lg shadow aspect-ratio-3/2">
+              <source srcset="./assets/rieke.webp" />
               <img src="./assets/rieke.jpg" alt="" class="absolute w-full h-full" />
             </picture>
             <h3 class="text-xl text-center">Rieke Helmers</h3>
@@ -207,6 +208,7 @@
           </div>
           <div class="flex-1 md:ml-12">
             <picture class="relative block mb-4 overflow-hidden rounded-lg shadow aspect-ratio-3/2">
+              <source srcset="./assets/jonas.webp" />
               <img src="./assets/jonas.jpg" alt="" class="absolute w-full h-full" />
             </picture>
             <h3 class="text-xl text-center">Jonas Kuske</h3>

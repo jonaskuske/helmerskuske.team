@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel serve *.html",
-    "build": "parcel build *.html",
+    "//": "--public-url required until https://github.com/lukechilds/parcel-plugin-ogimage/pull/6",
+    "build": "parcel build *.html --public-url https://helmerskuske.team",
     "deploy": "gh-pages -d dist",
     "test": "echo \"No tests here, baby!\" && exit 0"
   },
@@ -40,6 +41,7 @@
     "lint-staged": "^10.1.7",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-clean-dist": "0.0.6",
+    "parcel-plugin-ogimage": "^1.2.0",
     "parcel-plugin-static-files-copy": "^2.3.1",
     "postcss-import": "^12.0.1",
     "postcss-smoothscroll-anchor-polyfill": "^2.0.1",

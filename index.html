@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="de" class="h-full antialiased bg-primary scroll-smooth projects-{{ projects.length }}">
+<html
+  lang="de"
+  class="h-full antialiased bg-primary scroll-smooth scrollbar-white projects-{{ projects.length }}"
+>
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -59,6 +62,15 @@
   </head>
 
   <body class="flex flex-col min-h-full text-white font-body">
+    <script>
+      ;(function detectStaticScrollbar(doc) {
+        const el = doc.body.appendChild(doc.createElement('div'))
+        el.style.cssText = 'width:100px;height:100px;overflow:scroll;position:absolute;top:-100vh'
+        if (el.offsetWidth - el.clientWidth > 0) doc.documentElement.className += ' has-scrollbar'
+        doc.body.removeChild(el)
+      })(document)
+    </script>
+
     <main class="container">
       <section class="mb-16">
         <p class="mt-12 mb-8 text-center">

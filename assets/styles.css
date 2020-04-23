@@ -119,6 +119,27 @@ label[for='project-toggle']:hover,
 
 @tailwind utilities;
 
+.has-scrollbar .scrollbar-white::-webkit-scrollbar,
+.has-scrollbar.scrollbar-white::-webkit-scrollbar {
+  background: theme('colors.primary');
+  width: 7px;
+}
+
+.has-scrollbar .scrollbar-white::-webkit-scrollbar-thumb,
+.has-scrollbar.scrollbar-white::-webkit-scrollbar-thumb {
+  @apply bg-white;
+}
+.has-scrollbar .scrollbar-white::-webkit-scrollbar-thumb:hover,
+.has-scrollbar.scrollbar-white::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-300;
+}
+
+.has-scrollbar .scrollbar-white,
+.has-scrollbar.scrollbar-white {
+  scrollbar-width: thin;
+  scrollbar-color: theme('colors.white') transparent;
+}
+
 .align-arrow {
   transform: translate(-120%, 50%);
 }

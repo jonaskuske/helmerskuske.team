@@ -8,7 +8,7 @@ const plugins = {
 const pluginsProduction = {
   '@fullhuman/postcss-purgecss': {
     content: ['./**/*.html'],
-    whitelistPatterns: [/projects?--?\d+$/],
+    whitelistPatterns: [/has-scrollbar|projects?--?\d+$/],
     defaultExtractor: (content) => content.match(/[\w-/:.]+(?<!:)/g) || [],
   },
 }

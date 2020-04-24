@@ -46,6 +46,7 @@
     "postcss-import": "^12.0.1",
     "postcss-smoothscroll-anchor-polyfill": "^2.0.1",
     "posthtml-expressions": "^1.3.2",
+    "posthtml-img-autosize": "^0.1.4",
     "posthtml-shorten": "^1.0.0",
     "prettier": "^2.0.5",
     "tailwindcss": "^1.3.5",

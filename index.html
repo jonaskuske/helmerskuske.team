@@ -12,7 +12,22 @@
       content="Wir bieten Ihnen das Komplettpaket für Ihre neue Website! Modernes, frisches Design geht bei uns mit fortschrittlicher Entwicklungstechnik Hand in Hand. Wir freuen uns auf Sie!"
     />
     <title>Helmers & Kuske</title>
+
     <link rel="canonical" href="https://helmerskuske.team" />
+    <link
+      rel="preload"
+      as="font"
+      href="./assets/fonts/Rubik_400.woff2"
+      type="font/woff2"
+      crossorigin="crossorigin"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="./assets/fonts/Rubik_500.woff2"
+      type="font/woff2"
+      crossorigin="crossorigin"
+    />
 
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png" />
@@ -129,6 +144,9 @@
                   <img
                     src="{{ project.image.src }}"
                     alt="{{ project.image.alt }}"
+                    loading="{{ index > 3 ? 'lazy' : 'eager' }}"
+                    width="auto"
+                    height="auto"
                     class="absolute w-full h-full -z-1"
                   />
                 </picture>

@@ -2,6 +2,7 @@ const plugins = {
   'posthtml-expressions': {
     locals: { projects: require('./projects.json') },
   },
+  'posthtml-img-autosize': {},
 }
 
 const pluginsProduction = {

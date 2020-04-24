@@ -1,0 +1,43 @@
+<form action="https://api.test" method="POST" class="flex flex-col">
+  <div class="mb-2">
+    <label for="name" class="block">Name</label>
+    <input
+      type="text"
+      autocomplete="name"
+      id="name"
+      name="name"
+      class="block w-full p-1 text-white bg-transparent border-2 border-white outline-none focus:bg-white focus:text-primary"
+    />
+  </div>
+
+  <div class="mb-2">
+    <label for="mail" class="block">E-Mail *</label>
+    <input
+      type="email"
+      autocomplete="email"
+      required
+      id="mail"
+      name="email"
+      class="block w-full p-1 text-white bg-transparent border-2 border-white outline-none focus:bg-white focus:text-primary"
+    />
+  </div>
+
+  <div class="mb-4">
+    <label for="message" class="block">Nachricht *</label>
+    <textarea
+      name="message"
+      id="message"
+      rows="10"
+      class="block w-full p-1 text-white bg-transparent border-2 border-white outline-none focus:bg-white focus:text-primary"
+      required
+    >
+    </textarea>
+  </div>
+
+  <button
+    type="submit"
+    class="self-center inline-block px-4 py-2 bg-white border-2 border-transparent rounded-lg outline-none text-primary hocus:bg-primary hocus:text-white hocus:border-white focus:outline-none focus:shadow-outline"
+  >
+    Nachricht senden
+  </button>
+</form>

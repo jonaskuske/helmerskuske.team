@@ -1,0 +1,21 @@
+<footer class="container py-4 mt-auto">
+  <p class="mb-4 text-center">
+    <a href="#" class="outline-none opacity-50 hocus:opacity-100 hocus:underline">
+      Zurück nach oben
+    </a>
+  </p>
+  <p class="text-center opacity-50 hover:opacity-100 focus-within:opacity-100">
+    <a href="./impressum.html" class="outline-none hocus:underline">Impressum</a>
+    •
+    <a href="./datenschutz.html" class="outline-none hocus:underline">Datenschutz</a>
+  </p>
+
+  <script>
+    ;(function detectStaticScrollbar(doc) {
+      const el = doc.body.appendChild(doc.createElement('div'))
+      el.style.cssText = 'width:100px;height:100px;overflow:scroll;position:absolute;top:-100vh'
+      if (el.offsetWidth - el.clientWidth > 0) doc.documentElement.className += ' has-scrollbar'
+      doc.body.removeChild(el)
+    })(document)
+  </script>
+</footer>

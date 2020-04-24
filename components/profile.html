@@ -1,0 +1,21 @@
+<div>
+  <picture class="relative block mb-4 overflow-hidden rounded-lg shadow aspect-ratio-3/2">
+    <source srcset="{{ webp }}" />
+    <img src="{{ img }}" width="auto" height="auto" alt="" class="absolute w-full h-full" />
+  </picture>
+
+  <h3 class="text-xl text-center">{{ name }}</h3>
+
+  <p class="mb-4 text-center">
+    <a
+      href="{{ url }}"
+      class="underline outline-none md:no-underline hocus:underline"
+      target="_blank"
+      rel="noopener"
+    >
+      {{ linktext }}
+    </a>
+  </p>
+
+  <p>{{ description }}</p>
+</div>

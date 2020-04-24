@@ -2,6 +2,7 @@ const plugins = {
   'postcss-import': {},
   tailwindcss: {},
   'postcss-smoothscroll-anchor-polyfill': {},
+  'postcss-object-fit-images': {},
   autoprefixer: {},
 }
 

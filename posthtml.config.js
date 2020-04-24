@@ -1,15 +1,17 @@
+const removeHtmlExtension = async function (href) {
+  const isAbsolute = href.includes('//')
+  return isAbsolute ? href : href.replace('.html', '')
+}
+
 const plugins = {
-  'posthtml-expressions': {
-    locals: { projects: require('./projects.json') },
-  },
+  'posthtml-modules': {},
+  'posthtml-expressions': { locals: require('./content.json') },
   'posthtml-img-autosize': {},
 }
 
 const pluginsProduction = {
   'posthtml-shorten': {
-    shortener: {
-      process: async (href) => (href.includes('//') ? href : href.replace('.html', '')),
-    },
+    shortener: { process: removeHtmlExtension },
   },
 }
 

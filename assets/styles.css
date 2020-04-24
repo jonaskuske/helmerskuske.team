@@ -27,6 +27,14 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+html {
+  @apply h-full antialiased bg-primary scroll-smooth;
+}
+
+body {
+  @apply flex flex-col min-h-full text-white font-body;
+}
+
 img {
   @apply object-cover;
 }
@@ -60,6 +68,7 @@ img {
   @apply project--hidden;
 }
 
+/* First 3 projects always visible, also every if toggle is checked */
 .project--0,
 .project--1,
 .project--2,
@@ -67,12 +76,14 @@ img {
   @apply project--visible;
 }
 
+/* Tablet: 4th visible by default too (2 columns) */
 @screen md {
   .project--3 {
     @apply project--visible;
   }
 }
 
+/* Desktop: hide 4th one, 3 columns again */
 @screen lg {
   .project--3 {
     @apply project--hidden;
@@ -88,14 +99,15 @@ label[for='project-toggle']:hover,
   @apply shadow-outline;
 }
 
-.project-toggle-btn--less,
-#project-toggle:checked ~ * .project-toggle-btn--all {
+.project-toggle-text-less,
+#project-toggle:checked ~ * .project-toggle-text-all {
   display: none;
 }
-#project-toggle:checked ~ * .project-toggle-btn--less {
+#project-toggle:checked ~ * .project-toggle-text-less {
   display: inline;
 }
 
+/* Hide toggle if there aren't more than 3 (or 4 on Tablet) projects */
 .projects-0 #project-toggle,
 .projects-0 label[for='project-toggle'],
 .projects-1 #project-toggle,
@@ -123,6 +135,11 @@ label[for='project-toggle']:hover,
 
 @tailwind utilities;
 
+/* Used to align the back arrow on subpages */
+.align-arrow {
+  transform: translate(-120%, 50%);
+}
+
 .has-scrollbar .scrollbar-white::-webkit-scrollbar,
 .has-scrollbar.scrollbar-white::-webkit-scrollbar {
   background: theme('colors.primary');
@@ -142,8 +159,4 @@ label[for='project-toggle']:hover,
 .has-scrollbar.scrollbar-white {
   scrollbar-width: thin;
   scrollbar-color: theme('colors.white') transparent;
-}
-
-.align-arrow {
-  transform: translate(-120%, 50%);
 }

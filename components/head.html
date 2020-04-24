@@ -1,0 +1,74 @@
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link
+    rel="preload"
+    as="font"
+    href="./assets/fonts/Rubik_400.woff2"
+    type="font/woff2"
+    crossorigin="crossorigin"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="./assets/fonts/Rubik_500.woff2"
+    type="font/woff2"
+    crossorigin="crossorigin"
+  />
+  <link rel="stylesheet" href="./assets/styles.css" />
+
+  <!-- [if IE]
+  <link rel="shortcut icon" href="./favicon.ico">
+  <![endif]-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+  <link rel="mask-icon" href="./assets/icons/safari-pinned-tab.svg" color="#2a7b76" />
+
+  <meta name="theme-color" content="#2a7b76" />
+  <meta name="msapplication-TileColor" content="#2a7b76" />
+  <meta name="msapplication-config" content="./assets/icons/browserconfig.xml" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+  <meta
+    name="description"
+    content="Wir bieten Ihnen das Komplettpaket für Ihre neue Website! Modernes, frisches Design geht bei uns mit fortschrittlicher Entwicklungstechnik Hand in Hand. Wir freuen uns auf Sie!"
+  />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:description"
+    content="Wir bieten Ihnen das Komplettpaket für Ihre neue Website! Modernes, frisches Design geht bei uns mit fortschrittlicher Entwicklungstechnik Hand in Hand. Wir freuen uns auf Sie!"
+  />
+  <meta property="og:image" content="./assets/og_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <script>
+    ;(function loadPolyfills(doc, cdn, smoothscroll) {
+      if (!('scrollBehavior' in doc.documentElement.style)) {
+        insertScript(cdn + smoothscroll + '-polyfill/dist/' + smoothscroll + '.min.js')
+        insertScript(cdn + smoothscroll + '-anchor-polyfill')
+      }
+
+      if (!('objectFit' in new Image().style)) {
+        insertScript(cdn + 'object-fit-images@3.2.4/dist/ofi.min.js', function () {
+          window.objectFitImages()
+        })
+      }
+
+      function insertScript(source, callback) {
+        const script = doc.createElement('script')
+        script.src = source
+        script.onload = callback
+        doc.head.appendChild(script)
+      }
+    })(document, '//unpkg.com/', 'smoothscroll')
+  </script>
+
+  <content />
+</head>

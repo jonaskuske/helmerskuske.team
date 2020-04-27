@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel serve *.html",
     "//": "--public-url required until https://github.com/lukechilds/parcel-plugin-ogimage/pull/6",
-    "build": "parcel build *.html --public-url https://helmerskuske.team",
+    "build": "parcel build *.html --no-cache --public-url https://helmerskuske.team",
     "deploy": "gh-pages -d dist",
     "test": "echo \"No tests here, baby!\" && exit 0"
   },

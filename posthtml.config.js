@@ -1,3 +1,6 @@
+const { homepage } = require('./package.json')
+const isProduction = process.env.NODE_ENV === 'production'
+
 const removeHtmlExtension = async function (href) {
   const isAbsolute = href.includes('//')
   return isAbsolute ? href : href.replace('.html', '')
@@ -5,7 +8,12 @@ const removeHtmlExtension = async function (href) {
 
 const plugins = {
   'posthtml-modules': {},
-  'posthtml-expressions': { locals: require('./content.json') },
+  'posthtml-expressions': {
+    locals: {
+      ...require('./content.json'),
+      successUrl: isProduction ? homepage + '/success' : 'http://localhost:1234/success.html',
+    },
+  },
   'posthtml-img-autosize': {},
 }
 
@@ -16,5 +24,5 @@ const pluginsProduction = {
 }
 
 module.exports = {
-  plugins: { ...plugins, ...(process.env.NODE_ENV === 'production' && pluginsProduction) },
+  plugins: { ...plugins, ...(isProduction && pluginsProduction) },
 }

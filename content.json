@@ -21,6 +21,24 @@
 
   "projects": [
     {
+      "name": "Freundeskreis der Stadtbibliothek Bremerhaven",
+      "url": "https://freundeskreis-stadtbibliothek-bremerhaven.de",
+      "image": {
+        "alt": "",
+        "src": "./assets/projects/freundeskreis.jpg",
+        "webp": "./assets/projects/freundeskreis.webp"
+      }
+    },
+    {
+      "name": "Britney X Festival 2020",
+      "url": "http://britney.koeln",
+      "image": {
+        "alt": "",
+        "src": "./assets/projects/britney.jpg",
+        "webp": "./assets/projects/britney.webp"
+      }
+    },
+    {
       "name": "DMP Portfolio",
       "url": "https://dmp-bremerhaven.de",
       "image": {
@@ -36,6 +54,15 @@
         "alt": "",
         "src": "./assets/projects/coworking.jpg",
         "webp": "./assets/projects/coworking.webp"
+      }
+    },
+    {
+      "name": "Expedition in die Natur",
+      "url": "https://expedition-in-die-natur.de",
+      "image": {
+        "alt": "",
+        "src": "./assets/projects/expedition.jpg",
+        "webp": "./assets/projects/expedition.webp"
       }
     },
     {

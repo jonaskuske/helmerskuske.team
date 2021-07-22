@@ -33,7 +33,6 @@
     "url": "https://github.com/jonaskuske/helmerskuske.team/issues"
   },
   "homepage": "https://helmerskuske.team",
-  "dependencies": {},
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.5",

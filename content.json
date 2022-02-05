@@ -21,21 +21,21 @@
 
   "projects": [
     {
-      "name": "Freundeskreis der Stadtbibliothek Bremerhaven",
-      "url": "https://freundeskreis-stadtbibliothek-bremerhaven.de",
-      "image": {
-        "alt": "",
-        "src": "./assets/projects/freundeskreis.jpg",
-        "webp": "./assets/projects/freundeskreis.webp"
-      }
-    },
-    {
       "name": "Wilke Atelier",
       "url": "https://wilke-atelier.de",
       "image": {
         "alt": "",
         "src": "./assets/projects/wilke.jpg",
         "webp": "./assets/projects/wilke.webp"
+      }
+    },
+    {
+      "name": "Freundeskreis der Stadtbibliothek Bremerhaven",
+      "url": "https://freundeskreis-stadtbibliothek-bremerhaven.de",
+      "image": {
+        "alt": "",
+        "src": "./assets/projects/freundeskreis.jpg",
+        "webp": "./assets/projects/freundeskreis.webp"
       }
     },
     {

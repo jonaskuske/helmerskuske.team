@@ -16,6 +16,7 @@ function tailwindScrollBehavior({ addUtilities, variants }) {
 }
 
 module.exports = {
+  purge: false,
   theme: {
     container: { center: true, padding: '1.5rem' },
     aspectRatio: {

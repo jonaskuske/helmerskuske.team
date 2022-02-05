@@ -30,17 +30,17 @@
       }
     },
     {
-      "name": "Britney X Festival 2020",
-      "url": "http://britney.koeln",
+      "name": "Wilke Atelier",
+      "url": "https://wilke-atelier.de",
       "image": {
         "alt": "",
-        "src": "./assets/projects/britney.jpg",
-        "webp": "./assets/projects/britney.webp"
+        "src": "./assets/projects/wilke.jpg",
+        "webp": "./assets/projects/wilke.webp"
       }
     },
     {
       "name": "DMP Portfolio",
-      "url": "https://dmp-bremerhaven.de",
+      "url": "https://dmp.hs-bremerhaven.de",
       "image": {
         "alt": "",
         "src": "./assets/projects/dmp.jpg",

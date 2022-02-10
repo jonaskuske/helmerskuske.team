@@ -39,12 +39,12 @@
       }
     },
     {
-      "name": "DMP Portfolio",
-      "url": "https://dmp.hs-bremerhaven.de",
+      "name": "studentenfutter",
+      "url": "https://studentenfutter.app",
       "image": {
         "alt": "",
-        "src": "./assets/projects/dmp.jpg",
-        "webp": "./assets/projects/dmp.webp"
+        "src": "./assets/projects/studentenfutter.jpg",
+        "webp": "./assets/projects/studentenfutter.webp"
       }
     },
     {
@@ -57,12 +57,12 @@
       }
     },
     {
-      "name": "Expedition in die Natur",
-      "url": "https://expedition-in-die-natur.de",
+      "name": "Modern UI",
+      "url": "https://modern-ui.design",
       "image": {
         "alt": "",
-        "src": "./assets/projects/expedition.jpg",
-        "webp": "./assets/projects/expedition.webp"
+        "src": "./assets/projects/mui.jpg",
+        "webp": "./assets/projects/mui.webp"
       }
     },
     {
@@ -72,6 +72,24 @@
         "alt": "",
         "src": "./assets/projects/wieting.jpg",
         "webp": "./assets/projects/wieting.webp"
+      }
+    },
+    {
+      "name": "DMP Portfolio",
+      "url": "https://dmp.hs-bremerhaven.de",
+      "image": {
+        "alt": "",
+        "src": "./assets/projects/dmp.jpg",
+        "webp": "./assets/projects/dmp.webp"
+      }
+    },
+    {
+      "name": "Expedition in die Natur",
+      "url": "https://expedition-in-die-natur.de",
+      "image": {
+        "alt": "",
+        "src": "./assets/projects/expedition.jpg",
+        "webp": "./assets/projects/expedition.webp"
       }
     },
     {
@@ -90,6 +108,15 @@
         "alt": "",
         "src": "./assets/projects/sternenhimmel.jpg",
         "webp": "./assets/projects/sternenhimmel.webp"
+      }
+    },
+    {
+      "name": "Britney X Festival",
+      "url": null,
+      "image": {
+        "alt": "",
+        "src": "./assets/projects/britney.jpg",
+        "webp": "./assets/projects/britney.webp"
       }
     },
     {

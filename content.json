@@ -6,7 +6,7 @@
       "linktext": "jonaskuske.com",
       "img": "./assets/jonas.jpg",
       "webp": "./assets/jonas.webp",
-      "description": "Jonas, auch 24 Jahre alt, hat sich neben seinem Studium in der Digitalen Medienproduktion zum sogenannten Full Stack Developer weitergebildet. Er beherrscht alle modernen Web-Techniken und das Designen digitaler Anwendungen."
+      "description": "Jonas, auch 25 Jahre alt, hat sich neben seinem Studium in der Digitalen Medienproduktion zum sogenannten Full Stack Developer weitergebildet. Er beherrscht alle modernen Web-Techniken und das Designen digitaler Anwendungen."
     },
 
     "rieke": {
@@ -15,7 +15,7 @@
       "linktext": "riekehelmers.com",
       "img": "./assets/rieke.jpg",
       "webp": "./assets/rieke.webp",
-      "description": "Rieke ist 24 Jahre alt und UI-/UX-Designerin bei einem Start-up in Bremen. Ihr persönlicher Stil drückt sich durch Minimalismus und klare Strukturen aus. Ihre Designs kann Sie auch mit HTML, CSS und JavaScript umsetzen."
+      "description": "Rieke ist 25 Jahre alt und UI-/UX-Designerin bei einem Start-up in Bremen. Ihr persönlicher Stil drückt sich durch Minimalismus und klare Strukturen aus. Ihre Designs kann Sie auch mit HTML, CSS und JavaScript umsetzen."
     }
   },
 
@@ -76,7 +76,7 @@
     },
     {
       "name": "DMP Portfolio",
-      "url": "https://dmp.hs-bremerhaven.de",
+      "url": null,
       "image": {
         "alt": "",
         "src": "./assets/projects/dmp.jpg",
@@ -103,7 +103,7 @@
     },
     {
       "name": "Unterm Sternenhimmel",
-      "url": "https://unterm-sternenhimmel.de/",
+      "url": null,
       "image": {
         "alt": "",
         "src": "./assets/projects/sternenhimmel.jpg",
